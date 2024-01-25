@@ -13,7 +13,7 @@
         AllowsTransparency="True"
         xmlns:System="clr-namespace:System;assembly=mscorlib">
 
-    <Border CornerRadius="10" BorderThickness="2" Opacity="0.95">
+    <Border CornerRadius="2" BorderThickness="2" Opacity="1">
         <Border.Background>
             <ImageBrush ImageSource="images/flight1.jpg"/>
         </Border.Background>
@@ -66,31 +66,29 @@
                         Click="btnClose_Click"/>
             </Grid>
 
-            <StackPanel Width="285" Grid.Row="1" Orientation="Vertical" Margin="60,206,60,35" d:LayoutOverrides="VerticalAlignment">
-
-                <TextBlock Text="Sign in to your account" Margin="-50,-375,0,0"
-                        FontSize="15"
-                        FontWeight="Medium"
-                        FontFamily="Montserrat"
-                        Height="25"
-                        Foreground="Gold" Width="282">
+            <StackPanel Grid.Row="1"  Orientation="Vertical" Margin="34,20,27,10">
+                <TextBlock Text="Sign in to your account" Margin="-50,20,0,0"
+                            FontSize="15"
+                            FontWeight="Medium"
+                            FontFamily="Montserrat"
+                            Height="25"
+                            Foreground="Gold" Width="282">
                 </TextBlock>
 
-                <TextBlock Margin="1,-170,0,0" FontSize="15" FontWeight="Medium" FontFamily="Montserrat" Height="15" Foreground="White">
+                <TextBlock Margin="10,80,0,0" FontSize="15" FontWeight="Medium" FontFamily="Montserrat" Height="15" Foreground="White">
                     <Run Text="Username"/>
                     <Run Text="*" Foreground="Red"/>
                 </TextBlock>
-
                 <TextBox x:Name="txtUser"
                          FontSize="15"
                          FontWeight="Medium"
                          FontFamily="Montserrat"    
                          Foreground="White"
                          CaretBrush="LightGray"
-                         BorderThickness="0,0,0,3"
-                         Height="25"
+                         BorderThickness="0,0,0,2"
+                         Height="20"
                          VerticalAlignment="Center"
-                         Margin="2,-120,0,0"
+                         Margin="12,-120,30,-155"
                          Padding="30,5,0,0" Text="">
 
                     <TextBox.Background>
@@ -100,12 +98,11 @@
                     </TextBox.Background>
                 </TextBox>
 
-
-                <TextBlock Margin="0,-17,0,0"
+                <TextBlock Margin="10,40,10,5"
                         FontSize="15"
                         FontWeight="Medium"
                         FontFamily="Montserrat"
-                        Height="15"
+                        Height="25"
                         Foreground="White">  
                         <Run Text="Password"/>
                         <Run Text="*" Foreground="Red"/>
@@ -115,10 +112,10 @@
                          FontFamily="Montserrat"
                          Foreground="White"
                          CaretBrush="LightGray"
-                         BorderThickness="0,0,0,3"
-                         Height="30"
+                         BorderThickness="0,0,0,2"
+                         Height="25"
                          VerticalAlignment="Center"
-                         Margin="5,2,0,0"
+                         Margin="12,-5,30,0"
                          Padding="25,10,0,0" Password="">
 
                     <PasswordBox.Background>
@@ -128,15 +125,14 @@
                     </PasswordBox.Background>
                 </PasswordBox>
 
-
-
-                <TextBlock Text="Powered by Resh and Thosh Technologies" Margin="0,140,0,0"
-                        FontSize="15"
-                        FontWeight="Medium"
-                        FontFamily="Montserrat"
-                        Height="15"
-                        Foreground="gold">
+                <TextBlock Text="Forget Password ?" Margin="180,10,0,0"
+                            FontSize="15"
+                            FontWeight="Medium"
+                            FontFamily="Montserrat"
+                            Height="25"
+                            Foreground="Gold" Width="138">
                 </TextBlock>
+
                 <Button x:Name="btnLogin"
                         Background="Gray"
                         Foreground="Gold"
@@ -145,7 +141,7 @@
                         Cursor="Hand"                      
                         BorderThickness="2"
                         Grid.Column="2"
-                        Margin="0,-150,0,0"
+                        Margin="0,30,0,0"
                         Click="btnLogin_Click"
                         
                         IsDefault="True">
@@ -169,6 +165,14 @@
                     </Button.Template>
 
                 </Button>
+
+                <TextBlock Text="Powered by Resh and Thosh Technologies" Margin="1,55,10,0"
+                            FontSize="15"
+                            FontWeight="Medium"
+                            FontFamily="Montserrat"
+                            Height="25"
+                            Foreground="Gold" Width="290">
+                </TextBlock>
             </StackPanel>
         </Grid>
     </Border>
